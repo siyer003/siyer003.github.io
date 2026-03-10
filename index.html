@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sudhanshu Iyer | Software Engineer</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --card: #121933;
+      --text: #e8ecff;
+      --muted: #aab4d6;
+      --accent: #7aa2ff;
+      --border: #24305e;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      background: linear-gradient(180deg, #0b1020 0%, #11172c 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 32px 20px 64px;
+    }
+
+    .hero {
+      padding: 48px 0 24px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      margin: 0 0 8px;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      color: #0b1020;
+      border-color: var(--accent);
+    }
+
+    .section {
+      margin-top: 30px;
+      padding: 24px;
+      background: rgba(18, 25, 51, 0.82);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      padding: 18px;
+      border-radius: 14px;
+      background: #0f1630;
+      border: 1px solid var(--border);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+
+    .muted { color: var(--muted); }
+
+    ul {
+      margin: 10px 0 0 18px;
+      padding: 0;
+    }
+
+    .skills span {
+      display: inline-block;
+      margin: 6px 8px 0 0;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #0f1630;
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 24px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 640px) {
+      h1 { font-size: 2.1rem; }
+      .container { padding: 20px 14px 48px; }
+      .section { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>Sudhanshu Iyer</h1>
+      <div class="subtitle">Software Engineer | Backend Systems | AI/ML Applications</div>
+      <p>
+        I’m a software engineer with 4+ years of experience building backend systems and data-intensive applications.
+        I recently completed my M.S. in Computer Science at the University at Buffalo, where I worked on AI/ML projects
+        focused on NLP, deep learning, and production-oriented system design.
+      </p>
+      <div class="buttons">
+        <a class="btn primary" href="https://github.com/siyer003" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/sudhanshu-iyer-516bb418a/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a class="btn" href="mailto:sudhanshuiyer10971d@gmail.com">Email Me</a>
+        <a class="btn" href="resume.pdf" target="_blank">Resume</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>About</h2>
+      <p>
+        My background combines production backend engineering with applied machine learning. Professionally, I built banking
+        and risk-management systems using Java, Spring Boot, Oracle, ETL workflows, and performance tuning. Academically and
+        through personal projects, I’ve been building AI-driven systems using PyTorch, transformers, FastAPI, Redis, and Docker.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Featured Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Empathetic Dialogue System</h3>
+          <p class="muted">Transformer-based conversational AI with emotion recognition and safety-aware response generation.</p>
+          <ul>
+            <li>Built a multi-stage NLP pipeline for emotion detection and response generation</li>
+            <li>Used FastAPI, Redis, Docker, and worker-based orchestration</li>
+            <li><a href="https://github.com/siyer003/empathetic-dialogues-system" target="_blank" rel="noreferrer">View Project</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Resume Tailor</h3>
+          <p class="muted">LLM-powered application to tailor resumes and generate role-specific content.</p>
+          <ul>
+            <li>Frontend + backend workflow for resume parsing and tailoring</li>
+            <li>Focused on structured prompting and user-facing results</li>
+            <li><a href="https://github.com/siyer003" target="_blank" rel="noreferrer">View GitHub</a></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Task Prioritization System</h3>
+          <p class="muted">ML-assisted task prioritization with backend integration.</p>
+          <ul>
+            <li>Uses a local ML model served via FastAPI</li>
+            <li>Integrates with Java Spring Boot backend workflows</li>
+            <li><a href="https://github.com/siyer003" target="_blank" rel="noreferrer">View GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Experience</h2>
+      <div class="card">
+        <h3>MBB Labs Pvt. Ltd. — Senior Software Engineer</h3>
+        <p class="muted">Built and optimized backend systems for banking risk and limits management.</p>
+        <ul>
+          <li>Developed REST APIs, Spring Batch workflows, and Oracle-backed services</li>
+          <li>Worked on ETL/data processing pipelines handling large-scale operational workloads</li>
+          <li>Improved query performance and supported production-critical business workflows</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>Java</span>
+        <span>Spring Boot</span>
+        <span>SQL</span>
+        <span>Oracle</span>
+        <span>Python</span>
+        <span>FastAPI</span>
+        <span>Docker</span>
+        <span>Redis</span>
+        <span>PyTorch</span>
+        <span>NLP</span>
+        <span>REST APIs</span>
+        <span>Performance Tuning</span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Contact</h2>
+      <p>
+        Email: <a href="mailto:sudhanshuiyer10971d@gmail.com">sudhanshuiyer10971d@gmail.com</a><br />
+        GitHub: <a href="https://github.com/siyer003" target="_blank" rel="noreferrer">github.com/siyer003</a><br />
+        LinkedIn: <a href="https://www.linkedin.com/in/sudhanshu-iyer-516bb418a/" target="_blank" rel="noreferrer">Sudhanshu Iyer</a>
+      </p>
+    </section>
+
+    <footer>
+      Built with GitHub Pages.
+    </footer>
+  </div>
+</body>
+</html>
